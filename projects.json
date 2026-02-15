@@ -1,0 +1,34 @@
+[
+{
+    "number": "01",
+    "title": "Job Analyzer",
+    "description": "Built a side project that analyzes job postings against a candidate's profile using structured parsing and AI-assisted analysis. The application supports job ingestion from text, PDFs, and URLs, normalizes unstructured data, and applies validation logic to generate skill gap insights and role-fit recommendations.",
+    "useCase": "I built this to analyze my own skill gaps against job postings so I can quickly see where I stand and what I need to work on.",
+    "tags": ["Python", "FastAPI", "OpenAI API (GPT-4o)", "AI-assisted"],
+    "link": "https://github.com/rlanier-webdev/ai-job-analyzer"
+},
+{
+    "number": "02",
+    "title": "API Vitals",
+    "description": "A support-focused application that tests, monitors, and explains API failures in plain language. The goal is to simulate real-world Tier 2 / Tier 3 API troubleshooting by identifying common failure patterns (auth, payloads, rate limits, server errors) and providing actionable diagnostic insight instead of raw status codes.",
+    "useCase": "A Tier 2 or Tier 3 support engineer uses the tool to quickly diagnose API failures, like auth errors, bad payloads, or rate limits, and get actionable next steps instead of digging through raw logs and status codes.",
+    "tags": ["Python", "FastAPI", "SQLite", "HTML", "CSS", "JS", "AI-assisted"],
+    "link": ""
+},
+{
+    "number": "03",
+    "title": "City-Poly Historic Game API",
+    "description": "A REST API and web app for exploring the historic City-Poly rivalry. Browse and search game records by team, year, or game number through a responsive web interface or JSON API endpoints.",
+    "useCase": "I built this to learn how APIs work and practice troubleshooting by turning historic City-Poly game data into searchable endpoints.",
+    "tags": ["Go", "Gin", "GORM", "SQLite", "Bootstrap"],
+    "link": "https://rivalryapiv2-production.up.railway.app/"
+},
+{
+    "number": "04",
+    "title": "WNBA Draft SQL Analysis",
+    "description": "This project explores WNBA Draft data from 1997 to 2022 using SQL. It includes a wide range of queries to analyze player performance, team selection trends, and college-level stats. The goal was to deepen my SQL skills through practical, sports-oriented data analysis and produce insights from real-world-style datasets.",
+    "useCase": "A hands-on project to sharpen my SQL and data analysis skills by exploring WNBA Draft trends, player stats, and team selection patterns from 1997 to 2022.",
+    "tags": ["SQL", "SSMS", "Data Analysis"],
+    "link": "https://github.com/rlanier-webdev/SQL/tree/main/wnbadraftdb"
+}
+]
