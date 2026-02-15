@@ -9,11 +9,12 @@
 },
 {
     "number": "02",
-    "title": "API Vitals",
+    "title": "API Vitals (In Progress)",
     "description": "A support-focused application that tests, monitors, and explains API failures in plain language. The goal is to simulate real-world Tier 2 / Tier 3 API troubleshooting by identifying common failure patterns (auth, payloads, rate limits, server errors) and providing actionable diagnostic insight instead of raw status codes.",
     "useCase": "A Tier 2 or Tier 3 support engineer uses the tool to quickly diagnose API failures, like auth errors, bad payloads, or rate limits, and get actionable next steps instead of digging through raw logs and status codes.",
     "tags": ["Python", "FastAPI", "SQLite", "HTML", "CSS", "JS", "AI-assisted"],
-    "link": ""
+    "link": "",
+    "image": "assets/images/apivitals_screenshot.png"
 },
 {
     "number": "03",
