@@ -47,7 +47,7 @@ fetch("projects.json")
         card.innerHTML = `
             <div class="project-top">
                 <span class="project-number">${project.number}</span>
-                <span class="project-arrow">${hasImage ? "⤢" : "↗"}</span>
+                <span class="project-arrow"><i class="fa-solid ${hasImage ? "fa-expand" : "fa-arrow-up-right-from-square"}"></i></span>
             </div>
             <h3 class="project-title">${project.title}</h3>
             <p class="project-desc">${project.description}</p>
