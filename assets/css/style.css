@@ -1,12 +1,12 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-    --bg: #191c20;
+    --bg: #15181d;
     --surface: #151920;
     --surface-hover: #1c2230;
     --border: #2a3040;
     --text: #e8ecf4;
-    --text-muted: #8891a4;
+    --text-muted: #A3AAB9;
     --accent: #227cc5;
     --accent-dim: rgba(94, 155, 234, 0.08);
     --accent-glow: rgba(94, 155, 234, 0.15);
