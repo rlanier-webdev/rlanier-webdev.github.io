@@ -22,7 +22,7 @@
     "description": "A REST API and web app for exploring the historic City-Poly rivalry. Browse and search game records by team, year, or game number through a responsive web interface or JSON API endpoints.",
     "useCase": "I built this to learn how APIs work and practice troubleshooting by turning historic City-Poly game data into searchable endpoints.",
     "tags": ["Go", "Gin", "GORM", "SQLite", "Bootstrap"],
-    "link": "https://rivalryapiv2-production.up.railway.app/"
+    "link": "https://projects.rivalryapi.rashundawilliams.com"
 },
 {
     "number": "04",
