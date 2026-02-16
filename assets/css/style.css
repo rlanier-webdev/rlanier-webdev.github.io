@@ -12,6 +12,7 @@
     --accent-glow: rgba(94, 155, 234, 0.15);
     --tag-bg: rgba(94, 155, 234, 0.1);
     --tag-text: #227cc5;
+    --required: #ff0000;
 }
 
 html { scroll-behavior: smooth; }
@@ -23,6 +24,7 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
+
 
   /* --- Grain overlay --- */
 body::before {
@@ -133,7 +135,9 @@ body::before {
     border-color: var(--accent);
     background: var(--accent-dim);
 }
-
+#contact-btn {
+    cursor: pointer;
+}
   /* ====== SECTION DIVIDER ====== */
 .divider {
     border: none;
@@ -314,7 +318,8 @@ body::before {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.modal-close {
+.modal-close,
+.contact-close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -325,11 +330,99 @@ body::before {
     cursor: pointer;
     line-height: 1;
     transition: color 0.2s ease;
+    z-index: 1;
 }
-.modal-close:hover {
+.modal-close:hover,
+.contact-close:hover {
     color: #fff;
 }
 
+/* Contact form modal content */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--bg-primary, #1a1a1a);
+    padding: 2.5rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary, #fff);
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.875rem;
+    margin-bottom: 1rem;
+    background: var(--bg-secondary, #2a2a2a);
+    border: 1px solid var(--border-color, #3a3a3a);
+    border-radius: 4px;
+    color: var(--text-primary, #fff);
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent, #4CAF50);
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 0.875rem;
+    background: var(--accent, #4CAF50);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+#contact-form button:hover {
+    opacity: 0.9;
+}
+span.required {
+    color: var(--required);
+}
+span.required-text {
+    color: var(--text-muted);
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
   /* ====== ANIMATIONS ====== */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }

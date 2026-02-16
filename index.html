@@ -41,6 +41,10 @@
             <i class="fa-brands fa-linkedin-in"></i>
             LinkedIn
           </a>
+          <a id="contact-btn">
+            <i class="fa-solid fa-envelope"></i>
+            Contact
+          </a>
         </div>
       </section>
 
@@ -63,6 +67,31 @@
     <div class="modal-overlay" id="image-modal">
       <button class="modal-close" id="modal-close">&times;</button>
       <img class="modal-image" id="modal-image" src="" alt="Project screenshot">
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+          <span id="contact-close" class="contact-close">&times;</span>
+          <h2>Get In Touch</h2>
+          <form action="https://formsubmit.co/c9e54039341384dd0789ec4336b965fd" method="POST" id="contact-form">
+            <label class="form-label">
+              Name: <span class="required">*</span><span class="required-text">Required</span>
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+              Your email: <span class="required">*</span><span class="required-text">Required</span>
+              <input type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label>
+              Your message: <span class="required">*</span><span class="required-text">Required</span>
+              <textarea name="message" placeholder="Let's work!" required></textarea>
+            </label>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <button type="submit">Send</button>
+          </form>
+      </div>
     </div>
 
     <script src="assets/js/script.js"></script>
