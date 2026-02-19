@@ -95,24 +95,3 @@ fetch("projects.json")
   .catch((error) => {
     console.error("Error loading projects:", error);
   });
-
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-    })
-    .then((res) => {
-        if (res.ok) {
-            form.innerHTML =
-                "<p class='success-msg'>Thanks! I'll be in touch.</p>";
-        }
-    })
-    .catch((err) => {
-        form.innerHTML =
-            "<p class='error-msg'>Something went wrong. Please email me directly at <a href='mailto:rashundalanier+dev@gmail.com'>rashundalanier+dev@gmail.com</a>.</p>";
-    });
-});
