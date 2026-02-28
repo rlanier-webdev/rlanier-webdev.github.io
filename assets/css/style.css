@@ -138,6 +138,13 @@ body::before {
 #contact-btn {
     cursor: pointer;
 }
+
+.hero-links svg,
+.project-arrow svg {
+    width: 1em;
+    height: 1em;
+}
+
   /* ====== SECTION DIVIDER ====== */
 .divider {
     border: none;
