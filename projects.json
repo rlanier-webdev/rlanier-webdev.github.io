@@ -4,7 +4,7 @@
     "title": "Job Analyzer",
     "description": "Built a side project that analyzes job postings against a candidate's profile using structured parsing and AI-assisted analysis. The application supports job ingestion from text, PDFs, and URLs, normalizes unstructured data, and applies validation logic to generate skill gap insights and role-fit recommendations.",
     "useCase": "I built this to analyze my own skill gaps against job postings so I can quickly see where I stand and what I need to work on.",
-    "tags": ["Python", "FastAPI", "OpenAI API (GPT-4o)", "AI-assisted"],
+    "tags": ["Python", "FastAPI", "Claude API (Sonnet)", "AI-assisted"],
     "link": "https://github.com/rlanier-webdev/ai-job-analyzer"
 },
 {
